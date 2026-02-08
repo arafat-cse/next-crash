@@ -38,6 +38,10 @@ export default function RootLayout({
               {" "}
               <Link href="/about">About</Link>
             </li>
+            <li>
+              {" "}
+              <Link href="/blogs">Blogs</Link>
+            </li>
           </ul>
         </nav>
         <hr></hr>
