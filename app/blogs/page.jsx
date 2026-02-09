@@ -1,11 +1,27 @@
+import { time } from "console";
 import React from "react";
 
+
 export default function Blogs(){
+  const blogs = [
+    {
+      id: 1,
+      title:"Blog 1",
+      description: "Blog 1 description",
+    },{
+      id: 2,
+      title:"Blog 2",
+      description:"Blog 2 description",
+    }
+  ];
   return(
-    <main>
+    <main className="mt-10">
       <div>
         Blog page hera
       </div>
+      <ul>
+        {blogs.map((blog) => (<li key={blog.id}>{blog.title}</li>))}
+      </ul>
     </main>
   )
 }
